@@ -8,7 +8,7 @@ background = turtle.Screen()
 ##tina_background = input("What color should the background be?")
 ##tina_color = input("What color should Tina use to draw?")
 while counter < 4:
-    turtle.circle(10,10)
+    turtle.circle(1,1)
     counter= counter+1
 tina_color = "gold"
 tina_background = "silver"
