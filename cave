@@ -1,0 +1,59 @@
+import random
+import time
+
+def displayintro():
+  print('''YOU ARE IN A LAND FULL OF EVIL CHEETAHS. IN FRONT OF YOU, YOU SEE TWO CAVES. IN ONE CAVE, THE CHEETAH IS  FRIENDLY AND HARMLESS AND WILL SHARE HIS TREASURE    WITH YOU. THE OTHER CHEETAH IS HUNGRY, AND  WILL EAT   YOU IN A HEART BEAT.''')
+  print()
+
+def choosecave():
+    cave = ''
+    while cave != "1" and cave != "2" and cave != "3":
+        print(' which cave will you go into? (1 or 2 or 3)')
+        cave = input()
+        return cave
+
+
+
+def chooseweapon():
+  weapon= ''
+  while weapon != "1" or  weapon != "2" or weapon != "3":
+    print("Choose a number. 1 or 2 or 3?")
+    weapon = input()
+    return weapon
+    
+    weapongive = random.randint(1,3)
+    if chooseweapon== str(weapongive):
+      print("you have an axe")
+    if chooseweapon== str(weapongive):
+      print("you have a shotgun")
+    if chooseweapon== str(weapongive):
+      print('you have a knife')
+
+print("Before You enter the cave, You can choose a weapon from the magic pile")
+
+def checkcave(chosenCave):
+    print("You approach the cave ")
+    time.sleep(2)
+    print("It is dark and spooky, you hear a sound from down the cave")
+    time.sleep(2)
+    print(" A large Cheetah jumps out in front of you! It opens his jaws and growls at you")
+    time.sleep(2)
+
+    friendlyCave = random.randint(1,3)
+
+    if chosenCave== str(friendlyCave):
+      print('Gives you his treasure!')
+    if chosenCave== str(friendlyCave):
+      print("lies down and wants you to rub his tummy")
+    else:
+        print('Gobbles you down in one bite')
+    
+
+playAgain= 'yes'
+while playAgain == "yes" or playAgain == "y":
+  displayintro()
+  cavenumber = choosecave()
+  checkcave(cavenumber)
+
+  print('Do you want to play again? (yes or no)')
+  playAgain = input()
