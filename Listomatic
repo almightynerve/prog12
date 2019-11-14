@@ -1,0 +1,25 @@
+fish_list = ["salmon", "cod"]
+print("Look at my list of fish: " + str(fish_list))
+
+def list_o_matic(fstring):
+  if fstring == "":
+    fstring = fish_list.pop()
+    print(fstring.lower() + " popped from list")
+    return fish_list.pop()
+  elif fstring.lower() in fish_list:
+    print(fstring.lower() + " has been removed from list")
+    return fish_list.remove(fstring)
+  else:
+    print("1 instance of " + fstring.lower() + " appended to list")
+    return fish_list.append(fstring)
+
+while fish_list:
+  new_fish = input("Enter any type of fish or Q to quit: ")
+  if new_fish.upper() == "Q":
+    print("Goodbye, and thanks for all the fish!")
+    break
+  else:
+    print("Look at my list of fish: " + str(fish_list))
+    list_o_matic(new_fish)
+    print(fish_list)
+print("I have no fish. Goodbye!")
