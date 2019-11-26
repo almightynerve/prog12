@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MICROBIT PROJECT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+    h1.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+</style>
+</head>
+<body style="background-color:aliceblue;">
+<h1 class="serif">Welcome to my project review website</h1>
+<h2>What is a Microbit?</h2>
+<p>It is a pocket-sized computer 70 times smaller and 18 times faster than the original BBC Micro computers used in schools.<br> It has 25 red LED lights that can flash messages and be used to create games.<br> There are two programmable buttons that can be used to control games or pause and skip songs on a playlist.</p>
+
+
+<header>
+  <h2>Objectives</h2>
+  <style>
+h2 {
+  border: 1px solid powderblue;
+}
+</style>
+</header>
+
+<section>
+  <nav>
+    <img src="Assests/micro-bit-logo.png">
+  </nav>
+  
+  <article>
+    <h1>Comminucation between two Microbits</h1>
+    <p>Micro:Bit radio signals are used to communicate with one another or with many micro:bits. Generally, we can say that it is used for communication purposes.This provides the ability to send general purpose data packets from one micro:bit to another and to extend a message bus to span multiple micro: bits. So if we raise an event on one micro:bit, then another micro:bit can receive it. This component provides a very easy to use, flexible, broadcast radio channel. Anything we can send from one micro:bit, can be received by another micro:bit nearby.</p>
+  </article>
+</section>
+
+<footer>
+  <p>GI12</p>
+</footer>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+} 
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+    
+    
+    </style>
+<article> <h1> Controlling A 360 Degree Servo With A BBC micro:bit Process:</h1>
+    <ul><li>1 - Connect the Servo to the Breakout board.</li><li>2 - Write / download the code.</li><li>3 - Put the code onto the BBC micro:bit and test.</li><li>4 - Troubleshoot any issues.</li></ul>
+    <h1>My group's Code</h1>
+    <img src="Assests/Microbit%20codes%20Arian.png">
+    </article>
+    <footer>
+  <p>GI12</p>
+</footer>
+    <section>
+     <nav><img src="Assests/microbit_servo_wiring.png" width="350" height="300"></nav>
+    <article><h1>The Difference Between A 180 Deg' Servo & A Continuous Rotation Servo:</h1>
+    <ul><li>Cosmetically the mini 180 degree servo and the 360 degree servo look the same, both are the same in size as the Tower Pro SG90 and are often used as a lower cost alternative.
+Its operation is very different to that of a standard servo. Instead of going to a specified angle, this servo will be static at a 1.5 ms pulse (a trimmer is included to tweak this), a longer pulse (duty cycle) gives forward rotation and a shorter pulse (duty cycle) gives backwards rotation. The pulse frequency remains at 50Hz regardless of the length of the duty cycle. If you are using the block editor for the BBC micro:bit to write code to control the servo then this is taken care of by the code behind the blocks but if you choose to write your code in something like 'C' then you would need to specify a pulse frequency of 50Hz in your code.</li></ul>
+    </article>
+    </section>
+
+</body>
+</html>
